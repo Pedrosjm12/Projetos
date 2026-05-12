@@ -25,16 +25,16 @@ Exclusão: Remoção de usuários do banco de dados com atualização instantân
 📦 Como rodar o projeto
 ---
 
-1. Clonar o repositório:
+1 - Clonar o repositório:
 git clone https://github.com/Pedrosjm12/Projetos.git
 
-2. Configurar o Back-end:
+2 - Configurar o Back-end:
 cd Back-End
 npm install
 npx prisma migrate dev
 node servidor.js
 
-3. Configurar o Front-end
+3 - Configurar o Front-end
 Abra um novo terminal e entre na pasta do front:
 cd Front-ends
 npm install
