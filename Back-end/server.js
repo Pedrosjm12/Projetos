@@ -38,19 +38,17 @@ app.put('/usuarios/:id', async (req, res) => {
     try {
         await prisma.user.update({
             where: {
-                id: req.params.id
+                id: Number(req.params.id) 
             },
             data: {
                 name: req.body.nome,
                 email: req.body.email,
-                age: parseInt(req.body.idade) 
+                age: req.body.idade // Se a idade também for número, usa Number(req.body.idade)
             }
         });
 
         res.status(200).json({ message: "Usuário atualizado com sucesso!" });
-    } 
-    
-    catch (error) {
+    } catch (error) {
         res.status(500).json({ error: "Erro ao atualizar usuário" });
     }
 });
