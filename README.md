@@ -36,7 +36,6 @@ node servidor.js
 
 3. Configurar o Front-end
 Abra um novo terminal e entre na pasta do front:
-
 cd Front-ends
 npm install
 npm run dev
